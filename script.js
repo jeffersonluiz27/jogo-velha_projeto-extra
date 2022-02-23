@@ -21,7 +21,7 @@ console.log();
 
 // Estrutura principal do jogo
 while (!vitoria) {
-	console.log(`É a vez do jogador ${jogada}`);
+	console.log(`É a vez do jogador com (${jogada})`);
 
 	const linhaDesejada = parseInt(prompt('Digite a linha desejada: '));
 	const colunaDesejada = parseInt(prompt('Digite a coluna desejada: '));
@@ -70,7 +70,7 @@ while (!vitoria) {
 
 //Informa pros jogadores o resultado
 if (vitoria) {
-	console.log(`O jogador ${vencedor} venceu a partida!`);
+	console.log(`O jogador com (${vencedor}) venceu a partida!`);
 } else {
 	exibeTabela();
 	console.log('\nA partida terminou em empate!');
